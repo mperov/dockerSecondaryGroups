@@ -35,7 +35,7 @@ user@localhost$ docker run --mount type=bind,source=/home/user/topSecretDirector
 root@9196aa8f1ad2:/# ls /topSecretDirectory/
 ls: cannot open directory '/topSecretDirectory/': Permission denied
 ```  
-As you can see user has access to /home/user/topSecretDirectory/ on host but in container there is not permission to work with mounted directory.
+As you can see user has access to */home/user/topSecretDirectory/* on host but in container there is not permission to work with mounted directory.
 
 Also if you add container user to secondary groups it does not help:
 ```console
