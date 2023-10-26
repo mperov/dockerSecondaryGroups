@@ -46,3 +46,6 @@ uid=0(root) gid=0(root) groups=0(root),7777
 root@6e1dc734b5c6:/# ls /topSecretDirectory/
 ls: cannot open directory '/topSecretDirectory/': Permission denied
 ```
+
+### Post scriptum
+I faced with the same problem on CRI-O 1.27, which are used by Kubernetes 1.27
